@@ -1,5 +1,11 @@
 *{padding: 0; margin: 0;}
 
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+    transition: 0.8s;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.bg-dark {}
+
 .col-md-6.cangiua {
     text-align: center;
 }
@@ -72,6 +78,15 @@ html,body{
 
 @media (max-width: 576px) {
 *{}
+
+ul li.nav-item.active {
+    text-align: center;
+    border-bottom: #9a9da0 solid 1px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
+    background: #343a40;
+}
 .dautrang img {
 	height:100%;
 	width: auto;

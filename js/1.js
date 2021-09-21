@@ -11,7 +11,12 @@ var ss = $(".about").offset().top;
         $('.dautrang img').animate({top: ss/3}, 0);
     }
 
-
+    if (st > 0) {
+        $(".dautrang nav").addClass("bg-dark");
+    }
+    else {
+        $(".dautrang nav").removeClass("bg-dark");
+    }
 
 });
 });
