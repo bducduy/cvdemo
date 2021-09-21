@@ -1,5 +1,9 @@
 *{padding: 0; margin: 0;}
 
+.col-md-6.cangiua {
+    text-align: center;
+}
+
 i.fa.fa-angle-double-down {
     font-size: 40px;
 }
@@ -26,8 +30,7 @@ a.muiten {
 }
 
 .about img, .skillset img {
-    width: 450px;
-    height: 450px;
+    width: 80%;
 }
 html,body{
 	width: 100%;
