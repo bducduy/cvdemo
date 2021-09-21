@@ -1,0 +1,68 @@
+*{padding: 0; margin: 0;}
+
+i.fa.fa-angle-double-down {
+    font-size: 40px;
+}
+
+a.muiten {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    text-decoration: none;
+    color: white;
+    transform: translate(-50%, 0%);
+}
+
+.tentacgia h2 {
+    font-size: 60px;
+}
+
+.dautrang a.nav-link {
+    margin: 0px 8px;
+}
+
+.collapse .navbar-nav li.active:hover a.nav-link {
+    color: rgb(255, 165, 0);
+}
+
+.about img, .skillset img {
+    width: 450px;
+    height: 450px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.dautrang {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-items: center;
+}
+
+.dautrang img{
+	width: 1600px;
+	position: absolute;
+	z-index: -1;
+	top: 0%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+}
+
+.dautrang .tentacgia{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+}
+
+.tentacgia p {
+    font-size: 30px;
+    font-weight: 600;
+}
