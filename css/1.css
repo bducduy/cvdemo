@@ -1,5 +1,16 @@
 *{padding: 0; margin: 0;}
 
+.skillset {
+    padding-top: 62px;
+    padding-bottom: 50px;
+}
+
+.about {
+    background: #f5f5f5;
+    padding-bottom: 65px;
+    padding-top: 62px;
+}
+
 .nutdownload button.btn.btn-danger {
     padding: 14px 24px;
     background: #ff6a6a;
@@ -30,6 +41,10 @@
 
 p {
     color: #666;
+}
+
+.dautrang p {
+    color: white;
 }
 
 .about p {
@@ -110,7 +125,6 @@ html,body{
 	height: 100%;
 	overflow: hidden;
 	justify-items: center;
-	margin-bottom: 55px;
 }
 
 .dautrang img{
@@ -153,4 +167,59 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
 	height:100%;
 	width: auto;
 }
+}
+
+/*code cho thanh skill bar*/
+
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per{
+  height: 20px;
+  background-color: #0fbcf9;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
 }

@@ -2,8 +2,10 @@ $(document).ready(function() {
 	
 
 $(window).scroll(function (event) {
+
 var st = $(this).scrollTop();
 var ss = $(".about").offset().top;
+
     if (st < ss) {
         $('.dautrang img').animate({top: st/3}, 0);
     }
@@ -18,5 +20,21 @@ var ss = $(".about").offset().top;
         $(".dautrang nav").removeClass("bg-dark");
     }
 
+
+/*code for skillbar*/
+var ks = $(".skillset").offset().top;
+
+    if (st > ks) {
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{duration: 1000});
+      });
+    }
+
 });
+
+
+
 });
