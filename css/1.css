@@ -47,9 +47,9 @@ html,body{
 	position: absolute;
 	z-index: -1;
 	top: 0%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0%);
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
 }
 
 .dautrang .tentacgia{
@@ -65,4 +65,12 @@ html,body{
 .tentacgia p {
     font-size: 30px;
     font-weight: 600;
+}
+
+@media (max-width: 576px) {
+*{}
+.dautrang img {
+	height:100%;
+	width: auto;
+}
 }
