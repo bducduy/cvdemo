@@ -52,13 +52,17 @@ var sl = $('.latestprojects').offset().top;
 
 /*projects filer*/
 
-$(".thanhmenu li").click(function(event) {
-    var danhmuc = $(this).data("abc")
-    if (danhmuc == "all"){
-        $(".sanpham .row.khoi").isotope({filter:'*'});
+$('.khoi').isotope({
+  itemSelector: '.cot',
+});
+
+$('.thanhmenu ul li').click(function(event) {
+    var danhmuc = $(this).data("abc");
+    if (danhmuc == 'all'){
+        $('.khoi').isotope({filter:'*'},1000);
     }
     else {
-        $(".sanpham .row.khoi").isotope({filter:"."+danhmuc});
+        $('.khoi').isotope({filter:"."+danhmuc},1000);
     }
     return false;
 });
