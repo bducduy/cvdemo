@@ -32,6 +32,21 @@ var ks = $(".skillset").offset().top;
       });
     }
 
+/*code for latestprojects section*/
+
+var sq = $(".quotes").offset().top;
+var sl = $('.latestprojects').offset().top;
+    sq-=900;
+    if ((st > sq) && (st<sl)){
+        $(".quotes img").animate({top:(st-sq)/3},0)
+    }
+    else if (st<=sq) {
+        $(".quotes img").animate({top:(sl-sq-900)/3},0)
+    }
+    else {
+        $(".quotes img").animate({top:-(sl-sq-900)/3},0)
+    }
+
 });
 
 
