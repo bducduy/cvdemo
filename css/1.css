@@ -1,5 +1,118 @@
 *{padding: 0; margin: 0;}
 
+.dungdan i.fa {
+    background: #ffa500;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 18px;
+    margin: 0px 6px;
+    cursor: pointer;
+}
+
+._1sanpham p {
+    color: white;
+}
+
+._1sanpham h2 {
+    padding-top: 71px;
+}
+
+._1sanpham .mota {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    background: #000000ad;
+    height: 273px;
+    color: white;
+}
+
+._1sanpham img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+._1sanpham {
+    position: relative;
+}
+
+.sanpham .col-md-4 {
+    padding: 0 0;
+    width: 100%;
+    height: 273px;
+}
+
+._1sanpham img {
+}
+
+.theanh .thanhmenu {
+    text-align: center;
+}
+
+.theanh a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.theanh li:hover a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.theanh ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.theanh li {
+    display: block;
+    margin: 10px 0px;
+    padding: 0px 12px;
+}
+
+.ioffer .container {
+}
+
+.ioffer {
+    background: #f5f5f5;
+}
+
+.latestprojects hr {
+    border: black solid 1px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.ioffer h1 {
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skillset h1 {
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.latestprojects h1 {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .quotes button.btn.btn-danger {
     font-size: 18px;
     font-weight: 500;
@@ -30,6 +143,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
+    width: 100%;
 }
 
 .quotes {
@@ -48,6 +162,7 @@
     box-shadow: 6px 6px 15px 0px grey;
     padding: 15px;
     cursor: pointer;
+    background: white;
 }
 
 .ioffer .container .col-md-4.cangiua.text-center {margin-bottom: 60px;}
@@ -234,6 +349,14 @@ html,body{
 
 @media (max-width: 576px) {
 *{}
+
+.thanhmenu ul {
+    display: inherit;
+}
+
+.quotes img {
+    width: initial;
+}
 
 ul li.nav-item.active {
     text-align: center;
