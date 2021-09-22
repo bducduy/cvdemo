@@ -1,2 +1,2 @@
 # cvdemo.github.io
-cvdemo
+https://bducduy.github.io/cvdemo

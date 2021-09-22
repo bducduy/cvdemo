@@ -23,7 +23,7 @@ var ss = $(".about").offset().top;
 
 /*code for skillbar*/
 var ks = $(".skillset").offset().top;
-
+    ks-=100;
     if (st > ks) {
       $('.skill-per').each(function(){
         var $this = $(this);
@@ -59,10 +59,10 @@ $('.khoi').isotope({
 $('.thanhmenu ul li').click(function(event) {
     var danhmuc = $(this).data("abc");
     if (danhmuc == 'all'){
-        $('.khoi').isotope({filter:'*'},1000);
+        $('.khoi').isotope({filter:'*'});
     }
     else {
-        $('.khoi').isotope({filter:"."+danhmuc},1000);
+        $('.khoi').isotope({filter:"."+danhmuc});
     }
     return false;
 });
