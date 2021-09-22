@@ -29,7 +29,6 @@ var ks = $(".skillset").offset().top;
         var $this = $(this);
         var per = $this.attr('per');
         $this.css("width",per+'%');
-        $({animatedValue: 0}).animate({animatedValue: per},{duration: 1000});
       });
     }
 
