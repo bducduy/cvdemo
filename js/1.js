@@ -50,5 +50,18 @@ var sl = $('.latestprojects').offset().top;
 });
 
 
+/*projects filer*/
+
+$(".thanhmenu li").click(function(event) {
+    var danhmuc = $(this).data("abc")
+    if (danhmuc == "all"){
+        $(".sanpham .row.khoi").isotope({filter:'*'});
+    }
+    else {
+        $(".sanpham .row.khoi").isotope({filter:"."+danhmuc});
+    }
+    return false;
+});
+
 
 });
