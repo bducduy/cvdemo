@@ -38,13 +38,13 @@ var sq = $(".quotes").offset().top;
 var sl = $('.latestprojects').offset().top;
     sq-=900;
     if ((st > sq) && (st<sl)){
-        $(".quotes img").animate({top:(st-sq)/2},0)
+        $(".quotes img").animate({top:(st-sq)/3},0)
     }
     else if (st<=sq) {
         $(".quotes img").animate({top:(sl-sq-900)/2},0)
     }
     else {
-        $(".quotes img").animate({top:-(sl-sq-900)/2},0)
+        $(".quotes img").animate({top:-(sl-sq-900)/3},0)
     }
 
 });
@@ -66,6 +66,23 @@ $('.thanhmenu ul li').click(function(event) {
     }
     return false;
 });
+
+
+/*code for carousel bar*/
+$('.owl-carousel').owlCarousel({
+    margin:20,
+    responsive:{
+        0:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 
 
 });
