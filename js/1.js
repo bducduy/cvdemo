@@ -69,7 +69,7 @@ $('.thanhmenu ul li').click(function(event) {
 
 
 /*code for carousel bar*/
-$('.owl-carousel').owlCarousel({
+$('.khoilon .owl-carousel').owlCarousel({
     margin:20,
     responsive:{
         0:{
@@ -80,6 +80,25 @@ $('.owl-carousel').owlCarousel({
         },
         1000:{
             items:3
+        }
+    }
+})
+
+$('.doitac .owl-carousel').owlCarousel({
+    margin:20,
+    loop:true,
+    dots: false,
+    autoplayTimeout:1500,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:2
+        },
+        800:{
+            items:4
+        },
+        1000:{
+            items:6
         }
     }
 })

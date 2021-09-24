@@ -1,5 +1,63 @@
 *{padding: 0; margin: 0;}
 
+.doitac img {
+    width: 141px;
+}
+
+.doitac {
+    height: 223px;
+    width: 100%
+}
+
+.contact {
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+.contact button {
+    text-align: center;
+    background-color: #ff6a6a;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 3px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.contact button:hover {
+    box-shadow: 0 0 6px 0px grey;
+}
+
+textarea.tinnhan {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 8px;
+    height: 150px;
+}
+
+.contact input[type="text"] {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 8px;
+}
+
+.contact hr {
+    border: black solid 1px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.contact h1 {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .posts .thetin {background-color: white;padding: 15px 18px;padding-bottom: 28px;}
 
 .posts .col-sm-4 {}
