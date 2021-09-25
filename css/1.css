@@ -1,17 +1,47 @@
 *{padding: 0; margin: 0;}
 
-.doitac img {
-    width: 141px;
+footer {
+    text-align: center;
+    height: 180px;
+    background: black;
+    padding-top: 64px;
+}
+
+footer a {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #fd7e14;
+    display: inline-block;
+    height: 30px;
+    padding-top: 6px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    background: #ffc107;
+}
+
+footer a i {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.doitac .item img {
+    width: 140px !important;
 }
 
 .doitac {
     height: 223px;
-    width: 100%
+    width: 100%;
+    padding-top: 63px;
 }
 
 .contact {
     padding-bottom: 60px;
-    background-color: #fff;
+    background-color: #e6e6e6;
 }
 
 .contact button {
@@ -433,6 +463,10 @@ p {
     color: #666;
 }
 
+footer p {
+    color: white;
+}
+
 .counter p {
     color: white;
     font-size: 20px;
@@ -482,9 +516,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.bg-dark {}
 
 .col-md-6.cangiua {
     text-align: center;
-}
-
-.about .iconmang.text-center {
 }
 
 i.fa.fa-angle-double-down {
@@ -638,4 +669,32 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
   right: 0;
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;
+}
+
+/*responsive for map*/
+
+.googlemap {
+
+position: relative;
+
+/*padding–bottom: 75%; // This is the aspect ratio
+*/
+height: 100%;
+
+overflow: hidden;
+
+}
+
+.googlemap iframe {
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100% !important;
+
+height: 100% !important;
+
 }
