@@ -240,11 +240,9 @@ textarea.tinnhan {
 }
 
 .counter {
-    background: url(../images/fact.jpg);
+    background: url(../images/fact.jpg) no-repeat center center fixed;
     width: 100%;
     height: 340px;
-    background-attachment: fixed;
-    background-position: center;
     background-size: auto;
 }
 
@@ -702,7 +700,6 @@ html,body{
 .counter {
     height: 797px;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .thanhmenu ul {
