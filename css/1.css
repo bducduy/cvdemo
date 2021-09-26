@@ -1,10 +1,40 @@
 *{padding: 0; margin: 0;}
 
+.tentacgia .container {
+      display: block;
+      justify-content: center;
+      align-items: center;
+}
+.tentacgia span{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.tentacgia .input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
+.tentacgia .input-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 42px;
+      background-color: white;
+      margin-left: 8px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
 .dautrang a.navbar-brand {
     font-size: 30px;
 }
 
-.dautrang .container span {
+.dautrang .navbar .container span {
     color: #fd7e14;
 }
 
@@ -652,11 +682,6 @@ html,body{
 
     font-weight: 700;
     border-bottom: 2px solid #fd7e14;
-}
-
-.tentacgia p {
-    font-size: 30px;
-    font-weight: 600;
 }
 
 /*code cho di dong*/
