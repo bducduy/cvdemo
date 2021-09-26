@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+	new WOW().init();
 
 $(window).scroll(function (event) {
 
@@ -87,8 +87,24 @@ else {
     $('.roll-up').removeClass('nuthienra');
 }
 
+/*counter numbers*/
+
+if (st > ($('.quotes').offset().top)-200) {
+
+    $('.counter .number').each(function () {
+        var per = $(this).attr('per');
+
+        $(this).prop('Counter',0).animate({Counter: per},
+            {duration: 4000,easing: 'swing',step: function (now) 
+            {$(this).text(Math.ceil(now));
+            }
+                });
+        });
+}
+
 }); 
 /*******End rolling*********/
+
 
 /*code for roll-up*/
 $('.roll-up').on('click', function(event) {

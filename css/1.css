@@ -1,5 +1,14 @@
 *{padding: 0; margin: 0;}
 
+.dautrang a.navbar-brand {
+    font-size: 30px;
+}
+
+.dautrang .container span {
+    color: #fd7e14;
+}
+
+
 .roll-up {
     display: block;
     position: fixed;
@@ -187,11 +196,13 @@ textarea.tinnhan {
 .counter .number {
     font-size: 36px;
     color: #ff6a6a;
+    transition: 1s;
 }
+
+
 
 .counter .bao {transform: translateY(80%);color: white;}
 
-.counter .row.text-center {}
 
 .counter .container {
     height: 100%;
