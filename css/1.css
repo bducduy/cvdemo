@@ -6,7 +6,7 @@
       align-items: center;
 }
 .tentacgia span{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
 
 }
@@ -244,6 +244,8 @@ textarea.tinnhan {
     width: 100%;
     height: 340px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .khoilon .owl-theme .owl-dots .owl-dot.active span,.khoilon .owl-theme .owl-dots .owl-dot:hover span {
@@ -787,7 +789,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
 
 .googlemap {
 position: relative;
-padding–bottom: 75%;
+paddingâ€“bottom: 75%;
 height: 100%;
 overflow: hidden;
 }
