@@ -100,6 +100,7 @@ if (st > ($('.counter').offset().top)-300) {
             }
                 });
         });
+    return false;
 }
 
 }); 

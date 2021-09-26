@@ -700,6 +700,7 @@ html,body{
 .counter {
     height: 797px;
     background-size: cover;
+    background-attachment: initial;
 }
 
 .thanhmenu ul {
