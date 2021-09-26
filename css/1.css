@@ -729,7 +729,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
   background-color: #ff6a6a;
   border-radius: 5px;
   width: 0;
-  transition: 1s ease-in-out;
+  transition: 3s ease-in-out;
   position: relative;
 }
 
