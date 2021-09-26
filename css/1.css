@@ -1,5 +1,32 @@
 *{padding: 0; margin: 0;}
 
+.roll-up {
+    display: block;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 18px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.roll-up:hover {
+    background: #fd7e14;
+}
+
+.nuthienra {
+    visibility: visible;
+    opacity: 1;
+}
+
 .doitac .item {
     text-align: center;
 }
@@ -265,6 +292,17 @@ textarea.tinnhan {
     background: #000000ad;
     height: 273px;
     color: white;
+    margin: auto;
+    transition: 0.4s;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+._1sanpham:hover .mota {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
 }
 
 ._1sanpham img {
@@ -272,11 +310,15 @@ textarea.tinnhan {
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100%;
+    width: auto;
+    height: 275px;
 }
 
 ._1sanpham {
     position: relative;
+    width: 100%;
+    height: 273px;
+    overflow: hidden;
 }
 
 .sanpham .col-md-4 {
@@ -298,6 +340,10 @@ textarea.tinnhan {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
+}
+
+.thanhmenu .dangchon {
+    color: #fd7e14;
 }
 
 .theanh li:hover a {
@@ -534,6 +580,10 @@ a.muiten {
     text-decoration: none;
     color: white;
     transform: translate(-50%, 0%);
+}
+
+a.muiten:hover {
+    color: #fd7e14;
 }
 
 .tentacgia h2 {

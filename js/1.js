@@ -79,8 +79,24 @@ else {
 }
 
 
+/*code for roll-up*/
+if (st > 200) {
+    $('.roll-up').addClass('nuthienra');
+}
+else {
+    $('.roll-up').removeClass('nuthienra');
+}
+
 }); 
 /*******End rolling*********/
+
+/*code for roll-up*/
+$('.roll-up').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop:0},1000);
+    return false;
+});
+
 
 /*code for rolling when user click on menubar*/
 $('.dautrang li:nth-child(1) a').on('click', function(event) {
@@ -119,6 +135,38 @@ $('.dautrang li:nth-child(6) a').on('click', function(event) {
     return false;
 });
 
+$('.muiten i').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop: $('.about').offset().top},600);
+    return false;
+});
+
+/*.theanh menu on click*/
+
+$('.thanhmenu ul li:nth-child(1) a').on('click', function(event) {
+    event.preventDefault();
+    $('.thanhmenu ul li').children().removeClass('dangchon');
+    $(this).addClass('dangchon');
+    return false;
+});
+$('.thanhmenu ul li:nth-child(2) a').on('click', function(event) {
+    event.preventDefault();
+    $('.thanhmenu ul li').children().removeClass('dangchon');
+    $(this).addClass('dangchon');
+    return false;
+});
+$('.thanhmenu ul li:nth-child(3) a').on('click', function(event) {
+    event.preventDefault();
+    $('.thanhmenu ul li').children().removeClass('dangchon');
+    $(this).addClass('dangchon');
+    return false;
+});
+$('.thanhmenu ul li:nth-child(4) a').on('click', function(event) {
+    event.preventDefault();
+    $('.thanhmenu ul li').children().removeClass('dangchon');
+    $(this).addClass('dangchon');
+    return false;
+});
 
 /*projects filer*/
 
@@ -126,7 +174,7 @@ $('.khoi').isotope({
   itemSelector: '.cot',
 });
 
-$('.thanhmenu ul li').click(function(event) {
+$('.thanhmenu ul li a').click(function(event) {
     var danhmuc = $(this).data("abc");
     if (danhmuc == 'all'){
         $('.khoi').isotope({filter:'*'});
@@ -172,7 +220,6 @@ $('.doitac .owl-carousel').owlCarousel({
         }
     }
 })
-
 
 
 
