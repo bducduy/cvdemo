@@ -89,7 +89,7 @@ else {
 
 /*counter numbers*/
 
-if (st > ($('.quotes').offset().top)-200) {
+if (st > ($('.counter').offset().top)-200) {
 
     $('.counter .number').each(function () {
         var per = $(this).attr('per');
