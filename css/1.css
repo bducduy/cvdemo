@@ -1,5 +1,9 @@
 *{padding: 0; margin: 0;}
 
+.doitac .item {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     height: 180px;
@@ -31,6 +35,7 @@ footer a i {
 
 .doitac .item img {
     width: 140px !important;
+    margin: auto;
 }
 
 .doitac {
@@ -580,6 +585,14 @@ html,body{
     color: white;
 }
 
+.dautrang li a.chon {
+    background-color: transparent;
+    color: #fd7e14 !important;
+
+    font-weight: 700;
+    border-bottom: 2px solid #fd7e14;
+}
+
 .tentacgia p {
     font-size: 30px;
     font-weight: 600;
@@ -674,27 +687,18 @@ nav.navbar.navbar-expand-lg.navbar-dark.fixed-top {
 /*responsive for map*/
 
 .googlemap {
-
 position: relative;
-
-/*padding–bottom: 75%; // This is the aspect ratio
-*/
+padding–bottom: 75%;
 height: 100%;
-
 overflow: hidden;
-
 }
 
 .googlemap iframe {
 
 position: absolute;
-
 top: 0;
-
 left: 0;
-
 width: 100% !important;
-
 height: 100% !important;
 
 }

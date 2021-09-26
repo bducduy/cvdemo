@@ -47,6 +47,76 @@ var sl = $('.latestprojects').offset().top;
         $(".quotes img").animate({top:-(sl-sq-900)/3},0)
     }
 
+
+
+
+/*code for user click on menu items */
+var x=0,
+    y=0;
+if(st < $('.about').offset().top) {
+    $('.dautrang li').children().removeClass('chon');
+    $('.dautrang li:nth-child(1) a').addClass('chon');
+}
+else if((st >= $('.about').offset().top) && (st < $('.ioffer').offset().top)) {
+    $('.dautrang li').children().removeClass('chon');
+    $('.dautrang li:nth-child(2) a').addClass('chon');
+}
+else if((st >= $('.ioffer').offset().top) && (st < $('.quotes').offset().top)) {
+    $('.dautrang li').children().removeClass('chon');
+    $('.dautrang li:nth-child(3) a').addClass('chon');
+}
+else if((st >= $('.quotes').offset().top) && (st < $('.client').offset().top)) {
+    $('.dautrang li').children().removeClass('chon');
+    $('.dautrang li:nth-child(4) a').addClass('chon');
+}
+else if((st >= $('.client').offset().top) && (st < ($('.contact').offset().top)-1)) {
+    $('.dautrang li').children().removeClass('chon');
+    $('.dautrang li:nth-child(5) a').addClass('chon');
+}
+else {
+    $('.dautrang li').children().removeClass('chon');
+    $('.dautrang li:nth-child(6) a').addClass('chon');
+}
+
+
+}); 
+/*******End rolling*********/
+
+/*code for rolling when user click on menubar*/
+$('.dautrang li:nth-child(1) a').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop:0},1000);
+    return false;
+});
+
+$('.dautrang li:nth-child(2) a').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop: $('.about').offset().top},1000);
+    return false;
+});
+
+$('.dautrang li:nth-child(3) a').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop: $('.ioffer').offset().top},1000);
+    return false;
+});
+
+$('.dautrang li:nth-child(4) a').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop: $('.quotes').offset().top},1000);
+    return false;
+});
+
+$('.dautrang li:nth-child(5) a').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop: $('.client').offset().top},1000);
+    return false;
+});
+
+$('.dautrang li:nth-child(6) a').on('click', function(event) {
+    event.preventDefault();
+    $('body').animate({scrollTop: $('.contact').offset().top},1000);
+    return false;
 });
 
 
@@ -102,6 +172,8 @@ $('.doitac .owl-carousel').owlCarousel({
         }
     }
 })
+
+
 
 
 });
