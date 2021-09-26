@@ -246,6 +246,7 @@ textarea.tinnhan {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto;
 }
 
 .khoilon .owl-theme .owl-dots .owl-dot.active span,.khoilon .owl-theme .owl-dots .owl-dot:hover span {
