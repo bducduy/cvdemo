@@ -686,9 +686,7 @@ html,body{
 .dautrang li a.chon {
     background-color: transparent;
     color: #fd7e14 !important;
-
     font-weight: 700;
-    border-bottom: 2px solid #fd7e14;
 }
 
 /*code cho di dong*/
@@ -707,7 +705,7 @@ html,body{
 .counter {
     height: 797px;
     background-size: cover;
-    background-attachment: initial;
+    background-attachment: fixed;
 }
 
 .thanhmenu ul {
