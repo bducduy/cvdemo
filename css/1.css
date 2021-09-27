@@ -1,5 +1,12 @@
 *{padding: 0; margin: 0;}
 
+a.muiten i{
+visibility: visible; 
+animation-duration: 1500ms; 
+animation-iteration-count: infinite; 
+animation-name: bounce;
+} 
+
 .tentacgia .container {
       display: block;
       justify-content: center;
